@@ -1,0 +1,82 @@
+{
+  "id": "0f93c88d-bb26-480e-ab07-89b5d3f29886",
+  "uid": "ad-nihil-eligendi",
+  "type": "work-layout",
+  "data": {
+    "colour": "#1cd138",
+    "previewImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=900&h=500&fit=crop"
+    },
+    "projectName": [
+      {
+        "type": "heading1",
+        "text": "Streamline revolutionary e-markets",
+        "spans": []
+      }
+    ],
+    "projectSubheading": [
+      {
+        "type": "heading2",
+        "text": "Incubate 24/7 e-tailers",
+        "spans": []
+      }
+    ],
+    "title1": [
+      {
+        "type": "heading2",
+        "text": "Harness user-centric systems",
+        "spans": []
+      }
+    ],
+    "Content1": [
+      {
+        "type": "paragraph",
+        "text": "Ea occaecat aliquip aliqua ex ut elit consequat dolore dolore non aliqua reprehenderit incididunt. Ea amet cillum nostrud dolore est. Aliqua excepteur officia reprehenderit aute voluptate deserunt nisi nostrud consequat magna fugiat occaecat.",
+        "spans": []
+      }
+    ],
+    "title2": [
+      {
+        "type": "heading2",
+        "text": "Integrate magnetic web-readiness",
+        "spans": []
+      }
+    ],
+    "content2": [
+      {
+        "type": "paragraph",
+        "text": "Deserunt cupidatat voluptate aute eu qui minim enim eiusmod eiusmod minim nulla voluptate est consectetur cillum.",
+        "spans": []
+      }
+    ],
+    "mainImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=900&h=500&fit=crop"
+    },
+    "bodyTitle": [
+      {
+        "type": "heading2",
+        "text": "Engineer plug-and-play bandwidth",
+        "spans": []
+      }
+    ],
+    "bodyContent": [
+      {
+        "type": "paragraph",
+        "text": "Ea incididunt incididunt cupidatat aute veniam nisi velit cupidatat et et aliquip aute.",
+        "spans": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "slices": {
+    "HeroSlice": {
+      "default-slice": {
+        "items": {}
+      }
+    },
+    "MySlice": {
+      "default-slice": {
+        "primary": {},
+        "items": {
+          "processContent": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "TestSlice": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "test_slice",
+        "items": [
+          {
+            "repeatableImage": {
+              "dimensions": {
+                "width": 900,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=900&h=500&fit=crop"
+            },
+            "repeatContent": [
+              {
+                "type": "paragraph",
+                "text": "Esse minim esse mollit incididunt tempor.",
+                "spans": []
+              }
+            ]
+          },
+          {
+            "repeatableImage": {
+              "dimensions": {
+                "width": 900,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"
+            },
+            "repeatContent": [
+              {
+                "type": "paragraph",
+                "text": "Pariatur elit dolore tempor mollit deserunt. Cupidatat fugiat mollit mollit consequat sint irure. Cupidatat occaecat ullamco officia duis consequat eu amet et laboris.",
+                "spans": []
+              }
+            ]
+          },
+          {
+            "repeatableImage": {
+              "dimensions": {
+                "width": 900,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+            },
+            "repeatContent": [
+              {
+                "type": "paragraph",
+                "text": "Ut adipisicing irure non dolore nulla velit.",
+                "spans": []
+              }
+            ]
+          },
+          {
+            "repeatableImage": {
+              "dimensions": {
+                "width": 900,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
+            },
+            "repeatContent": [
+              {
+                "type": "paragraph",
+                "text": "Est officia est occaecat velit Lorem proident consequat nulla incididunt minim mollit ipsum cupidatat eiusmod dolor. Culpa qui labore incididunt ullamco cupidatat pariatur proident enim et. Consectetur nisi qui nostrud incididunt aliqua quis dolor consectetur.",
+                "spans": []
+              }
+            ]
+          }
+        ],
+        "primary": {
+          "title": [
+            {
+              "type": "heading1",
+              "text": "Redefine viral bandwidth",
+              "spans": []
+            }
+          ]
+        }
+      }
+    ],
+    "NewSlice": {
+      "default-slice": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "ProcessSlice": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "process_slice",
+        "items": [
+          {
+            "ProcessImage": {
+              "dimensions": {
+                "width": 900,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
+            },
+            "ProcessContent": [
+              {
+                "type": "paragraph",
+                "text": "Cillum sit aliquip Lorem voluptate culpa cillum aute minim do in.",
+                "spans": []
+              }
+            ]
+          },
+          {
+            "ProcessImage": {
+              "dimensions": {
+                "width": 900,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
+            },
+            "ProcessContent": [
+              {
+                "type": "paragraph",
+                "text": "Est nisi aute id amet cupidatat.",
+                "spans": []
+              }
+            ]
+          }
+        ],
+        "primary": {
+          "title": [
+            {
+              "type": "heading2",
+              "text": "Deliver B2B action-items",
+              "spans": []
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "_cts": {
+    "test-custom-type": {},
+    "work-layout": {
+      "projectName": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "Content1": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "title2": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "title1": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "projectSubheading": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "content2": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "bodyTitle": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "bodyContent": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
+  }
+}

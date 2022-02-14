@@ -1,3 +1,4 @@
+import smConfig from "./sm.json";
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -7,11 +8,12 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'patrick_portfolio-nuxt',
+    title: 'Patrick Bradley',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Patrick Bradley is a UX/UI Designer from London, Ontario focusing on simplifying user interfaces using wireframes and prototypes to produce user friendly, engaging responsive websites and mobile applications.' },
+      { hid: 'og:site_name', name: 'og:site_name', content: 'Patrick Bradley' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -38,6 +40,9 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    ["@nuxtjs/prismic", {
+      endpoint: smConfig.apiEndpoint || "",
+    }], ["nuxt-sm"]
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -49,5 +54,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    transpile: ["vue-slicezone", "nuxt-sm"]
   }
 }
