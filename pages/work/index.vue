@@ -27,9 +27,6 @@ export default {
       }
     },
 
-    mounted() {
-    },
-
     components: {
         SliceZone
     }
