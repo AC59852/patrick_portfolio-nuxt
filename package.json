@@ -7,18 +7,24 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "slicemachine": "start-slicemachine"
   },
   "dependencies": {
+    "@nuxtjs/prismic": "^1.4.0",
     "@nuxtjs/pwa": "^3.3.5",
+    "@prismicio/slice-simulator-vue": "^0.2.0",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
+    "nuxt-sm": "^0.1.0",
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
+    "vue-slicezone": "^0.1.0",
     "vue-template-compiler": "^2.6.14",
     "webpack": "^4.46.0"
   },
   "devDependencies": {
-    "push-dir": "^0.4.1"
+    "push-dir": "^0.4.1",
+    "slice-machine-ui": "^0.2.0"
   }
 }
