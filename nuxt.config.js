@@ -1,6 +1,9 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  router: {
+    base: '/patrick_portfolio-nuxt/'
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
