@@ -1,0 +1,15 @@
+@import './modules/_vars.scss';
+@import './modules/_navigation.scss';
+@import './modules/_about.scss';
+@import './modules/_footer.scss';
+
+// gotham bold italic for footer nav
+// gotham bold for nav
+// gotham black for big headers
+// gotham bold for small headers
+// dm sans for paragraph text
+
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+}
