@@ -1,8 +1,8 @@
 <template>
-  <section class="section">
-    <prismic-rich-text :field="slice.primary.title" class="title" />
-    <div class="process__wrapper">
-    <div v-for="(item, i) in slice.items" :key="`slice-item-${i}`">    
+  <section class="project__process">
+    <prismic-rich-text :field="slice.primary.title" class="project__title project__title--subtitle" />
+    <div class="project__processWrapper">
+    <div v-for="(item, i) in slice.items" :key="`slice-item-${i}`" class="project__processItem">    
       <prismic-image :field="item.ProcessImage" />
       <prismic-rich-text :field="item.ProcessContent" />
     </div>

@@ -1,8 +1,15 @@
 <template>
-  <section>
-      <nuxt-link v-for="project in projects" :key="project.length" :to="'/work/' + project.id">
-          <prismic-rich-text :field="project.data.projectName" class="title" />
-      </nuxt-link>
+  <section class="work">
+      <ul class="work__wrapper">
+        <li v-for="project in projects" :key="project.length" class="work__item">
+            <nuxt-link :to="'/work/' + project.id" class="work__image">
+              <prismic-image :field="project.data.previewImage" :style="{ backgroundColor: project.data.colour }"/>
+            </nuxt-link>
+            <nuxt-link :to="'/work/' + project.id" class="work__title">
+              <h2>{{ project.data.projectName[0].text }}</h2>
+            </nuxt-link>
+        </li>
+      </ul>
   </section>
 </template>
 
@@ -27,12 +34,12 @@ export default {
       }
     },
 
+    mounted() {
+      console.log(this.projects)
+    },
+
     components: {
         SliceZone
     }
 }
 </script>
-
-<style>
-
-</style>
