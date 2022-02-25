@@ -5,12 +5,27 @@
       --main-color: {{ work.colour }};
       }
     </style>
-      <section class="project__hero">
-        <prismic-image :field="work.previewImage" class="project__heroImage"/>
-        <prismic-rich-text :field="work.projectName" class="project__title"/>
-        <prismic-rich-text :field="work.projectSubheading" class="project__text"/>
-      </section>
-      <slice-zone type="work-layout" :uid="workUID" work-colour="blue"/>
+      <div class="project__content">
+        <section class="project__hero">
+          <prismic-image :field="work.previewImage" class="project__heroImage"/>
+          <prismic-rich-text :field="work.projectName" class="project__title"/>
+          <prismic-rich-text :field="work.projectSubheading" class="project__text"/>
+        </section>
+        <section class="project__tools project__textContent">
+          <prismic-rich-text :field="work.title1" class="project__title project__title--small"/>
+          <prismic-rich-text :field="work.Content1" class="project__text project__text--small project__text--tools"/>
+        </section>
+        <section class="project__problem project__textContent">
+          <prismic-rich-text :field="work.title2" class="project__title project__title--small"/>
+          <prismic-rich-text :field="work.content2" class="project__text project__text--small"/>
+        </section>
+        <prismic-image :field="work.mainImage" class="project__image project__image--small"/>
+        <section class="project__body project__textContent">
+          <prismic-rich-text :field="work.bodyTitle" class="project__title project__title--small"/>
+          <prismic-rich-text :field="work.bodyContent" class="project__text project__text--small"/>
+        </section>
+        <slice-zone type="work-layout" :uid="workUID" work-colour="blue"/>
+      </div>
   </section>
 </template>
 
