@@ -1,7 +1,7 @@
 <template>
   <header class="header">
       <nav class="header__nav nav">
-          <img src="/logo.svg" alt="Patrick Bradley Portfolio Logo" class="nav__logo">
+          <img src="@/assets/images/logo.svg" alt="Patrick Bradley Portfolio Logo" class="nav__logo">
           <ul class="nav__list">
               <li class="nav__listItem"><nuxt-link to="/" class="nav__link">About</nuxt-link></li>
               <li class="nav__listItem"><nuxt-link to="/work" class="nav__link">Work</nuxt-link></li>
