@@ -11,7 +11,7 @@
               <label class="contact__label" for="lastName">Last Name</label>
           </div>
           <div class="contact__formWrapper">
-              <input class="contact__input" type="text" v-model="email" name="email" id="email" maxlength="25" placeholder="Email" required>
+              <input class="contact__input" type="text" v-model="email" name="email" id="email" maxlength="40" placeholder="Email" required>
               <label class="contact__label" for="email">Email</label>
           </div>
           <div class="contact__formWrapper">
