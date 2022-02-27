@@ -12,6 +12,9 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'og:title', name: 'og:title', content: 'Patrick Bradley Portfolio' },
+      { hid: 'og:image', name: 'og:image', content: '/logo.png' },
+      { hid: 'og:image:alt', name: 'og:image:alt', content: `Patrick Bradley's Logo` },
       { hid: 'description', name: 'description', content: 'Patrick Bradley is a UX/UI Designer from London, Ontario focusing on simplifying user interfaces using wireframes and prototypes to produce user friendly, engaging responsive websites and mobile applications.' },
       { hid: 'og:site_name', name: 'og:site_name', content: 'Patrick Bradley' },
       { name: 'format-detection', content: 'telephone=no' }
