@@ -32,6 +32,11 @@
 <script>
 import SliceZone from 'vue-slicezone';
 export default {
+  transition: {
+    name: 'test',
+    mode: ''    
+  },
+  
   data() {
     return {
       workUID: '',

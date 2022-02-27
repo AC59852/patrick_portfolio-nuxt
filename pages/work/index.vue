@@ -17,6 +17,10 @@
 import SliceZone from 'vue-slicezone'
 
 export default {
+  transition: {
+    name: 'router-anim',
+    mode: ''
+  },
     data() {
       return {
           projects: [],

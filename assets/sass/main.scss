@@ -25,6 +25,11 @@
     position: absolute;
     left: 5%;
     width: 90%;
+
+    .about__img {
+      right: 6.65%;
+      bottom: 3.6%;
+    }
   }
   .router-anim-enter-active {
       position: absolute;
@@ -33,6 +38,11 @@
     left: 5%;
     height: calc(100vh - 96px);
     width: 90%;
+
+    .about__img {
+      right: 6.65%;
+      bottom: 3.6%;
+    }
   }
   
   @keyframes testLeave {
@@ -42,4 +52,56 @@
   @keyframes testEnter {
     0% {transform: translateX(100vw); overflow: hidden;}
     100% {transform: translateX(0);}
+  }
+
+  .router-anim-leave-active {
+    animation: testLeave 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+    height: calc(100vh - 96px);
+    position: absolute;
+    left: 5%;
+    width: 90%;
+
+    .about__img {
+      right: 6.65%;
+      bottom: 3.6%;
+    }
+  }
+
+
+  .test-leave-active {
+    animation: testLeave2 1s ease-in-out;
+    animation-fill-mode: forwards;
+    height: calc(100vh - 96px);
+    position: absolute;
+    left: 5%;
+    width: 90%;
+
+    .about__img {
+      right: 6.65%;
+      bottom: 3.6%;
+    }
+  }
+
+  .test-enter-active {
+      position: absolute;
+    animation: testEnter2 1s ease-in-out;
+    animation-delay: 0s;
+    left: 5%;
+    height: calc(100vh - 96px);
+    width: 90%;
+
+    .about__img {
+      right: 6.65%;
+      bottom: 3.6%;
+    }
+  }
+
+  @keyframes testLeave2 {
+    0% {transform: translateY(0); overflow: hidden;}
+    100% {transform: translateY(-100vh);}
+  }
+  @keyframes testEnter2 {
+    0% {transform: translateY(100vh); overflow: hidden;}
+    100% {transform: translateY(0);}
   }
