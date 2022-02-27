@@ -26,6 +26,10 @@
 <script>
 import emailjs from '@emailjs/browser';
 export default {
+    transition: {
+    name: 'router-anim',
+    mode: ''
+  },
     data() {
         return {
             emailMsg: '',

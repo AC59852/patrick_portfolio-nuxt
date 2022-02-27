@@ -15,4 +15,31 @@
 .wrapper {
     position: relative;
     min-height: 100vh;
+    overflow: hidden;
 }
+
+.router-anim-leave-active {
+    animation: testLeave 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+    height: calc(100vh - 96px);
+    position: absolute;
+    left: 5%;
+    width: 90%;
+  }
+  .router-anim-enter-active {
+      position: absolute;
+    animation: testEnter 1.5s ease-in-out;
+    animation-delay: 0s;
+    left: 5%;
+    height: calc(100vh - 96px);
+    width: 90%;
+  }
+  
+  @keyframes testLeave {
+    0% {transform: translateX(0); overflow: hidden;}
+    100% {transform: translateX(-100vw);}
+  }
+  @keyframes testEnter {
+    0% {transform: translateX(100vw); overflow: hidden;}
+    100% {transform: translateX(0);}
+  }

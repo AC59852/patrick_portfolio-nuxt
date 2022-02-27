@@ -2,7 +2,6 @@
     display: flex;
     width: 90%;
     margin: 0 auto;
-    align-items: center;
 
     &__wrapper {
         width: 681px;
@@ -29,10 +28,12 @@
     }
 
     &__img {
-        width: 600px;
-        position: absolute;
+        width: 100%;
+        max-width: 610px;
         // left: 784px;
-        right: 11%;
-        bottom: 6%;
+        margin-left: 6%;
+        margin-top: 1%;
+        object-fit: contain;
+        overflow: hidden;
     }
 }
