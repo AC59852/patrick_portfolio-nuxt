@@ -1,5 +1,5 @@
 <template>
-  <section class="project__process">
+  <section class="project__process project__textContent">
     <prismic-rich-text :field="slice.primary.title" class="project__title project__title--small" />
     <div class="project__processWrapper">
     <div v-for="(item, i) in slice.items" :key="`slice-item-${i}`" class="project__processItem">    

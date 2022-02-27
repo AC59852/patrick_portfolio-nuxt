@@ -5,7 +5,7 @@
       --main-color: {{ work.colour }};
       }
     </style>
-      <div class="project__content">
+      <article class="project__content">
         <section class="project__hero">
           <prismic-image :field="work.previewImage" class="project__heroImage"/>
           <prismic-rich-text :field="work.projectName" class="project__title"/>
@@ -25,7 +25,7 @@
           <prismic-rich-text :field="work.bodyContent" class="project__text project__text--small"/>
         </section>
         <slice-zone type="work-layout" :uid="workUID" work-colour="blue"/>
-      </div>
+      </article>
   </section>
 </template>
 
