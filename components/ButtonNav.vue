@@ -1,6 +1,7 @@
 <template>
-  <section class="buttonNav">
+  <section class="buttonNav" v-if="$nuxt.$route.name !== 'work-id'">
       <span class="currentPage" v-if="$nuxt.$route.name === 'index'">About</span>
+      <span class="currentPage" v-else-if="$nuxt.$route.name === 'work'">My Work</span>
       <span class="currentPage" v-else>{{ $nuxt.$route.name }}</span>
       <nuxt-link to="/"></nuxt-link>
       <nuxt-link to="/work"></nuxt-link>
