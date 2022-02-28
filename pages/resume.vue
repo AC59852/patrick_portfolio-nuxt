@@ -38,7 +38,7 @@ export default {
     .swiper-slide, .wiper-slide-duplicate, .swiper-slide-duplicate-prev, .swiper-slide-duplicate-next {
         width: 70% !important;
         filter: grayscale(1);
-        transition: filter 1s ease;
+        transition: filter 1s ease !important;
     }
 
     .swiper-slide-active, .swiper-slide-duplicate-active {
