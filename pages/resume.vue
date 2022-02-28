@@ -36,7 +36,7 @@ export default {
 </script>
 <style>
     .swiper-slide, .wiper-slide-duplicate, .swiper-slide-duplicate-prev, .swiper-slide-duplicate-next {
-        width: 70%;
+        width: 70% !important;
         filter: grayscale(1);
         transition: filter 1s ease;
     }
