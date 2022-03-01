@@ -5,6 +5,7 @@
 @import './modules/_project.scss';
 @import './modules/_contact.scss';
 @import './modules/_footer.scss';
+@import './modules/_queries.scss';
 
 // gotham bold italic for footer nav
 // gotham bold for nav
@@ -22,7 +23,7 @@
   height: 70vh !important;
   padding: 5% 10%;
   background: black;
-  width: 65% !important;
+  width: 60% !important;
   filter: grayscale(1);
   transition: filter 1s ease !important;
 }
@@ -43,8 +44,7 @@
   animation-fill-mode: forwards;
   height: calc(100vh - 96px);
   position: absolute;
-  left: 5%;
-  width: 90%;
+  width: 100%;
 
   .about__img {
     right: 6.65%;
@@ -63,20 +63,21 @@
     filter: grayscale(0);
     background-color: rgb(73, 70, 101);
   }
-  .swiper-slide:last-child {
-    order: -1;
-  }
+
   .swiper-slide:nth-child(3) {
     display: none;
+  }
+
+  .swiper-slide:last-child {
+    order: -1;
   }
 }
   .router-anim-enter-active {
     position: absolute;
     animation: testEnter 1.5s ease-in-out;
     animation-delay: 0s;
-    left: 5%;
     height: calc(100vh - 96px);
-    width: 90%;
+    width: 100%;
 
     .about__img {
       right: 6.65%;
@@ -99,8 +100,7 @@
     animation-fill-mode: forwards;
     height: calc(100vh - 96px);
     position: absolute;
-    left: 5%;
-    width: 90%;
+    width: 100%;
 
     .about__img {
       right: 6.65%;
@@ -112,9 +112,8 @@
       position: absolute;
     animation: testEnter2 1s ease-in-out;
     animation-delay: 0s;
-    left: 5%;
     height: calc(100vh - 96px);
-    width: 90%;
+    width: 100%;
 
     .about__img {
       right: 6.65%;
