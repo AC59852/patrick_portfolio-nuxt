@@ -1,5 +1,5 @@
 import smConfig from "./sm.json";
-import test from "./test.json";
+import site from "./siteData.json";
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -21,7 +21,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: test.link + '/icon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: site.link + 'icon.png' }
     ]
   },
 

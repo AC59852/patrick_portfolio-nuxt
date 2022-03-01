@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import SliceZone from 'vue-slicezone'
+import SliceZone from 'vue-slicezone';
 
 export default {
   transition: {

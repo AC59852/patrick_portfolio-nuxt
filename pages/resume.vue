@@ -1,12 +1,14 @@
 <template>
-  <div v-swiper="swiperOption" class="w-5/6 ml-auto relative" :loadtheme="false">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" :key="banner" v-for="banner in banners">
-        <!-- Render original HTML in server, render Swiper in browser (client) -->
-        <img class="swiper-image" :src="banner" />
+  <section class="work">
+    <div v-swiper="swiperOption" :loadtheme="false">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" :key="banner" v-for="banner in banners">
+          <!-- Render original HTML in server, render Swiper in browser (client) -->
+          <img class="swiper-image" :src="banner" />
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -34,21 +36,3 @@ export default {
   },
 };
 </script>
-<style>
-    .swiper-slide, .wiper-slide-duplicate, .swiper-slide-duplicate-prev, .swiper-slide-duplicate-next {
-        width: 70% !important;
-        filter: grayscale(1);
-        transition: filter 1s ease !important;
-    }
-
-    .swiper-slide-active, .swiper-slide-duplicate-active {
-        filter: grayscale(0);
-    }
-    .swiper-image {
-        width: 100%;
-        height: 70vh;
-        object-fit: cover;
-        /* center the object */
-        object-position: center;
-    }
-</style>
