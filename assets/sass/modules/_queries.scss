@@ -7,4 +7,109 @@
         width: 90%;
         left: 5%;
     }
+
+    .router-anim-leave-active {
+        height: calc(100vh - 96px);
+        width: 100%;
+      
+        .about__img {
+          right: 6.65%;
+          bottom: 3.6%;
+        }
+      
+        .swiper-wrapper {
+          justify-content: center;
+        }
+      
+        // put the last swiper-slide first
+        .swiper-slide {
+          margin-right: 30px;
+        }
+        .swiper-slide:first-child {
+          filter: grayscale(0);
+          background-color: rgb(73, 70, 101);
+        }
+      
+        .swiper-slide:nth-child(3) {
+          display: none;
+        }
+      
+        .swiper-slide:last-child {
+          order: -1;
+        }
+      }
+        .router-anim-enter-active {
+          height: calc(100vh - 96px);
+          width: 100%;
+      
+          .about__img {
+            right: 6.65%;
+            bottom: 3.6%;
+          }
+        }
+
+        @keyframes testLeave {
+            0% {transform: translateX(0); overflow: hidden;}
+            100% {transform: translateX(-100vw);}
+          }
+          @keyframes testEnter {
+            0% {transform: translateX(100vw); overflow: hidden;}
+            100% {transform: translateX(0);}
+          }
+
+    .about {
+        flex-direction: row;
+        &__wrapper {
+            width: 681px;
+            margin-left: 15%;
+            margin-top: 9%;
+        }
+    
+        &__title {
+            width: 713px;
+            font-size: 66px;
+            margin: 20px 0;
+        }
+    
+        &__para {
+            font-size: 38px;
+        }
+    
+        &__img {
+            width: 600px;
+            position: absolute;
+            // left: 784px;
+            right: 11%;
+            bottom: 6%;
+        }
+    }
+
+    .nav {
+        height: 70px;
+    
+        &__list {
+            display: flex;
+        }
+    
+        &__link {
+            font-family: 'Gotham';
+            font-weight: 600;
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0 30px;
+        }
+    }
+
+    .footer {
+      padding: 20px 0;
+      &__wrapper {
+          width: 90%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 0 auto;
+      }
+  }
+    
 }

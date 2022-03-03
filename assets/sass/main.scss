@@ -13,6 +13,63 @@
 // gotham bold for small headers
 // dm sans for paragraph text
 
+.hide {
+  display: none !important;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 9;
+  transition: background-color 0.5s ease-in-out, display 0.5s ease-in-out 0.5s;
+}
+
+.overlay--open {
+  animation: overlayOpen 0.5s ease-in-out;
+  display: block;
+  animation-fill-mode: forwards;
+}
+.overlay--close {
+  animation: overlayClose 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes overlayOpen {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes overlayClose {
+  0% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  99% {
+    height: 100vh;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -99999;
+    height: 0;
+  }
+}
+
+.container {
+  transition: transform 0.5s ease-in-out;
+}
+
+.container--slide {
+  transform: translateY(20%);
+}
+
 .wrapper {
     position: relative;
     min-height: 100vh;
@@ -40,16 +97,12 @@
 }
 
 .router-anim-leave-active {
-  animation: testLeave 1.5s ease-in-out;
+  animation: testLeave 0.5s ease-in-out;
   animation-fill-mode: forwards;
-  height: calc(100vh - 96px);
+  height: calc(100vh - 68px);
   position: absolute;
-  width: 100%;
-
-  .about__img {
-    right: 6.65%;
-    bottom: 3.6%;
-  }
+  width: 90%;
+  left: 50%;
 
   .swiper-wrapper {
     justify-content: center;
@@ -74,24 +127,20 @@
 }
   .router-anim-enter-active {
     position: absolute;
-    animation: testEnter 1.5s ease-in-out;
+    left: 50%;
+    animation: testEnter 0.5s ease-in-out;
     animation-delay: 0s;
-    height: calc(100vh - 96px);
-    width: 100%;
-
-    .about__img {
-      right: 6.65%;
-      bottom: 3.6%;
-    }
+    height: calc(100vh - 68px);
+    width: 90%;
   }
   
   @keyframes testLeave {
-    0% {transform: translateX(0); overflow: hidden;}
-    100% {transform: translateX(-100vw);}
+    0% {transform: translate(-50%, 0); overflow: hidden;}
+    100% {transform: translate(-50%, -100vh);}
   }
   @keyframes testEnter {
-    0% {transform: translateX(100vw); overflow: hidden;}
-    100% {transform: translateX(0);}
+    0% {transform: translate(-50%, 100vh); overflow: hidden;}
+    100% {transform: translate(-50%, 0);}
   }
 
 

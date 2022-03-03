@@ -1,5 +1,5 @@
 <template>
-  <section class="contact">
+  <section class="contact container">
       <h1 class="contact__title" v-html="emailMsg">{{ emailMsg }}</h1>
       <form class="contact__form" @submit.prevent="sendEmail">
           <div class="contact__formWrapper">

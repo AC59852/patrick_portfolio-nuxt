@@ -1,5 +1,5 @@
 <template>
-  <section class="work work__container">
+  <section class="work work__container container">
       <div v-swiper="swiperOption" :loadtheme="false" v-if="mobile === true">
         <div class="swiper-wrapper">
           <nuxt-link class="swiper-slide" :to="'/work/' + project.id" :key="project.length" v-for="project in projects" :style="{ backgroundColor: project.data.colour }">

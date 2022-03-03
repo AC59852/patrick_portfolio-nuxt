@@ -5,8 +5,8 @@
               <span>Patrick Bradley &copy; {{ currentDate.getFullYear() }}</span>
           </div>
           <div class="footer__socials">
-              <img src="/" alt="Instagram Icon">
-              <img src="/" alt="linkedIn Icon">
+              <a href="https://www.instagram.com/oattyonfilm/" target="_blank"><img src="@/assets/icons/instagram.svg" alt="Instagram Icon"></a>
+              <a href="https://www.linkedin.com/in/w-patrick-bradley/" target="_blank"><img src="@/assets/icons/linkedin.svg" alt="linkedIn Icon"></a>
           </div>
       </div>
   </footer>

@@ -1,6 +1,7 @@
 <template>
   <div class="wrapper">
       <Navigation />
+      <div class="overlay"></div>
       <Nuxt />
       <ButtonNav />
       <Footer />
