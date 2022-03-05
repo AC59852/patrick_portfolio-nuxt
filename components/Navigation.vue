@@ -23,7 +23,12 @@ export default {
 
             document.querySelector(".nav__close").classList.toggle("hide");
             document.querySelector(".nav__hamMenu").classList.toggle("hide");
-            document.querySelector(".container").classList.toggle("container--slide");
+            
+
+            // if the screen size is less than 768px
+            if (window.innerWidth <= 1400) {
+                document.querySelector(".container").classList.toggle("container--slide");
+            }
         },
 
         addOverlay() {

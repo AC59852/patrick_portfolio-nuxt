@@ -1,11 +1,16 @@
 <template>
-  <section class="work work__container container">
+  <section class="work work__container">
       <div v-swiper="swiperOption" :loadtheme="false" v-if="mobile === true">
         <div class="swiper-wrapper">
-          <nuxt-link class="swiper-slide" :to="'/work/' + project.id" :key="project.length" v-for="project in projects" :style="{ backgroundColor: project.data.colour }">
-            <!-- Render original HTML in server, render Swiper in browser (client) -->
-            <prismic-image class="swiper-image" :field="project.data.previewImage"/>
-          </nuxt-link>
+          <div class="swiper-slide" :key="project.length" v-for="project in projects">
+            <nuxt-link :to="'/work/' + project.id" >
+              <!-- Render original HTML in server, render Swiper in browser (client) -->
+              <prismic-image class="swiper-image" :style="{ backgroundColor: project.data.colour }" :field="project.data.previewImage"/>
+            </nuxt-link>
+            <nuxt-link :to="'/work/' + project.id" class="work__title">
+              <h2>{{ project.data.projectName[0].text }}</h2>
+            </nuxt-link>
+          </div>
         </div>
       </div>
         <ul class="work__wrapper" v-if="mobile === false">
@@ -27,7 +32,7 @@ import { directive } from "vue-awesome-swiper";
 
 export default {
   transition: {
-    name: 'router-anim',
+    name: 'test',
     mode: ''
   },
 
@@ -50,6 +55,12 @@ export default {
         centeredSlides: true,
         loop: true,
         spaceBetween: 30,
+
+        breakpoints: {
+          375: {
+            spaceBetween: 30,
+          }
+        }
       },
     }
   },

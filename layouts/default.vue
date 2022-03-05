@@ -2,8 +2,10 @@
   <div class="wrapper">
       <Navigation />
       <div class="overlay"></div>
-      <Nuxt />
-      <ButtonNav />
+      <div class="container">
+        <Nuxt />
+        <ButtonNav />
+      </div>
       <Footer />
   </div>
 </template>
