@@ -4,13 +4,13 @@
           <h1 class="about__title">Patrick Bradley</h1>
           <p class="about__para">{{ aboutMe }}</p>
       </div>
-      <img src="@/assets/images/man_1.png" alt="Image of man holding chin" class="about__img">
+      <img src="@/assets/images/me_1.png" alt="Image of man holding chin" class="about__img">
   </section>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
+  name: 'About',
   transition: {
     name: 'router-anim',
     mode: ''

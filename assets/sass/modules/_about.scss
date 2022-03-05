@@ -1,21 +1,20 @@
 .about {
     display: flex;
-    width: 90%;
+    flex-direction: column;
+    width: 100%;
     margin: 0 auto;
 
     &__wrapper {
-        width: 681px;
-        margin-left: 15%;
-        margin-top: 9%;
+        width: 80%;
+        margin: 15% auto 3%;
     }
 
     &__title {
         font-family: 'Gotham';
-        width: 713px;
         font-style: normal;
         font-weight: 900;
-        font-size: 66px;
-        margin: 20px 0;
+        font-size: 30px;
+        margin: 20px 0 10px;
         text-transform: uppercase;
     }
 
@@ -23,15 +22,17 @@
         font-family: "DM Sans";
         font-style: normal;
         font-weight: normal;
-        font-size: 38px;
+        font-size: 19px;
         line-height: 146%;
     }
 
     &__img {
-        width: 600px;
+        width: 47%;
+        margin: 0 auto;
         position: absolute;
-        // left: 784px;
-        right: 11%;
-        bottom: 6%;
+        bottom: 8%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: bottom 0.5s ease-in-out;
     }
 }

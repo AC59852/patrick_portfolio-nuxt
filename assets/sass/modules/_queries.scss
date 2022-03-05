@@ -1,0 +1,203 @@
+@media screen and (min-width: 375px) and (min-height: 800px) {
+  .about {
+    &__para {font-size: 20px;}
+
+    &__img {
+      width: 63%;
+      bottom: 7%;
+    }
+  }
+}
+
+@media screen and (min-width: 390px) {
+  .about__img {
+    width: 70%;
+    bottom: 5.5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .overlay {
+    display: none;
+  }
+    .work {
+        width: 95%;
+    }
+
+    .router-anim-leave-active, .router-anim-enter-active, .test-leave-active, .test-enter-active {
+        width: 95% !important;
+        left: 5%;
+    }
+
+    .router-anim-leave-active {
+        height: calc(100vh - 96px);
+        width: 95% !important;
+      
+        .about__img {
+          right: 6.65%;
+          bottom: 3.6%;
+        }
+      
+        .swiper-wrapper {
+          justify-content: center;
+        }
+      
+        // put the last swiper-slide first
+        .swiper-slide {
+          margin-right: 30px;
+        }
+        .swiper-slide:first-child {
+          filter: grayscale(0);
+          background-color: rgb(73, 70, 101);
+        }
+      
+        .swiper-slide:nth-child(3) {
+          display: none;
+        }
+      
+        .swiper-slide:last-child {
+          order: -1;
+        }
+      }
+        .router-anim-enter-active {
+          height: calc(100vh - 96px);
+          width: 95%;
+      
+          .about__img {
+            right: 6.65%;
+            bottom: 3.6%;
+          }
+        }
+
+        @keyframes testLeave {
+            0% {transform: translateX(0); overflow: hidden;}
+            100% {transform: translateX(-100vw);}
+          }
+          @keyframes testEnter {
+            0% {transform: translateX(100vw); overflow: hidden;}
+            100% {transform: translateX(0);}
+          }
+
+    .about {
+        flex-direction: row;
+        width: 95%;
+        &__wrapper {
+            width: 681px;
+            margin-left: 15%;
+            margin-top: 9%;
+        }
+    
+        &__title {
+            width: 713px;
+            font-size: 66px;
+            margin: 20px 0;
+        }
+    
+        &__para {
+            font-size: 38px;
+        }
+    
+        &__img {
+            width: 600px;
+            position: absolute;
+            // left: 784px;
+            right: 11%;
+            bottom: 2%;
+        }
+    }
+
+    .nav {
+        height: 70px;
+    
+        &__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: initial;
+            align-items: initial;
+            width: auto;
+            position: initial;
+            top: initial;
+            left: initial;
+            height: initial;
+            background: transparent;
+            z-index: initial;
+        }
+    
+        &__link {
+            font-family: 'Gotham';
+            font-weight: 600;
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0 30px;
+        }
+
+        &__menuIcon {
+          display: none;
+        }
+    }
+
+    .buttonNav {
+      top: initial;
+      bottom: 14%;
+      left: 16%;
+      transform: translate(0,0);
+
+      &__title {
+        text-align: left;
+        margin: 13px;
+      }
+    }
+
+    .footer {
+      height: 62px;
+      &__wrapper {
+          width: 80%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 0 auto;
+      }
+  }
+
+  .work {
+    width: 100%;
+
+    &__wrapper {
+        padding-top: 3%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__item {
+        object-fit: contain;
+        text-decoration: none;
+        width: 270px;
+    }
+
+    &__image {
+        
+        img {
+            width: 100%;
+            height: 515px;
+            box-sizing: border-box;
+            object-fit: contain;
+            padding: 8%;
+            margin: 16% 0 8%;
+            box-shadow: 18px 17px 16px -1px rgba(0, 0, 0, 0.12);
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-family: 'DM Sans';
+        color: black;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 16px;
+        text-decoration: none;
+    }
+}
+    
+}

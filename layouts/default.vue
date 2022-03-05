@@ -1,8 +1,11 @@
 <template>
   <div class="wrapper">
       <Navigation />
-      <Nuxt />
-      <ButtonNav />
+      <div class="overlay"></div>
+      <div class="container">
+        <Nuxt />
+        <ButtonNav />
+      </div>
       <Footer />
   </div>
 </template>

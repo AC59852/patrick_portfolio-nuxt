@@ -5,6 +5,7 @@
 @import './modules/_project.scss';
 @import './modules/_contact.scss';
 @import './modules/_footer.scss';
+@import './modules/_queries.scss';
 
 // gotham bold italic for footer nav
 // gotham bold for nav
@@ -12,96 +13,180 @@
 // gotham bold for small headers
 // dm sans for paragraph text
 
+.hide {
+  display: none !important;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: -1;
+  transition: background-color 0.5s ease-in-out, display 0.5s ease-in-out 0.5s;
+}
+
+.overlay--open {
+  animation: overlayOpen 0.5s ease-in-out;
+  display: block;
+  animation-fill-mode: forwards;
+}
+.overlay--close {
+  animation: overlayClose 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes overlayOpen {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 0;
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9;
+  }
+}
+
+@keyframes overlayClose {
+  0% {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9;
+  }
+  99% {
+    height: 100vh;
+    display: block;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -1 !important;
+    height: 0;
+    display: none;
+  }
+}
+
+.container {
+  transition: padding-top 0.5s ease-in-out;
+}
+
+.container--slide {
+  padding-top: 20%;
+
+  img {
+    bottom: -6%;
+  }
+}
+
 .wrapper {
     position: relative;
     min-height: 100vh;
     overflow: hidden;
 }
 
-.router-anim-leave-active {
-    animation: testLeave 1.5s ease-in-out;
-    animation-fill-mode: forwards;
-    height: calc(100vh - 96px);
-    position: absolute;
-    left: 5%;
-    width: 90%;
+.swiper-container {
+  margin-top: 17%;
+}
 
-    .about__img {
-      right: 6.65%;
-      bottom: 3.6%;
+.swiper-slide, .swiper-slide-duplicate, .swiper-slide-duplicate-prev, .swiper-slide-duplicate-next {
+  width: 65% !important;
+  filter: grayscale(1);
+  transition: filter 1s ease !important;
+}
+
+.swiper-slide-active, .swiper-slide-duplicate-active {
+  filter: grayscale(0);
+}
+.swiper-image {
+  width: 100%;
+  object-fit: cover;
+  /* center the object */
+  object-position: center;
+  box-sizing: border-box;
+  padding: 0 5%;
+}
+
+.router-anim-leave-active {
+  animation: testLeave 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+
+  .swiper-wrapper {
+    justify-content: center;
+  }
+
+  // put the last swiper-slide first
+  .swiper-slide {
+    margin: 0 15px
+  }
+  .swiper-slide:first-child {
+    filter: grayscale(0);
+    img {
+      background-color: rgb(73, 70, 101);
     }
   }
-  .router-anim-enter-active {
-      position: absolute;
-    animation: testEnter 1.5s ease-in-out;
-    animation-delay: 0s;
-    left: 5%;
-    height: calc(100vh - 96px);
-    width: 90%;
 
-    .about__img {
-      right: 6.65%;
-      bottom: 3.6%;
-    }
+  .swiper-slide:nth-child(3) {
+    display: none;
+  }
+
+  .swiper-slide:last-child {
+    order: -1;
+  }
+}
+  .router-anim-enter-active {
+    position: absolute;
+    left: 50%;
+    animation: testEnter 0.5s ease-in-out;
+    animation-delay: 0s;
+    height: calc(100vh - 68px);
+    width: 100%;
   }
   
   @keyframes testLeave {
-    0% {transform: translateX(0); overflow: hidden;}
-    100% {transform: translateX(-100vw);}
+    0% {transform: translate(-50%, 0); overflow: hidden;}
+    100% {transform: translate(-50%, -100vh);}
   }
   @keyframes testEnter {
-    0% {transform: translateX(100vw); overflow: hidden;}
-    100% {transform: translateX(0);}
-  }
-
-  .router-anim-leave-active {
-    animation: testLeave 1.5s ease-in-out;
-    animation-fill-mode: forwards;
-    height: calc(100vh - 96px);
-    position: absolute;
-    left: 5%;
-    width: 90%;
-
-    .about__img {
-      right: 6.65%;
-      bottom: 3.6%;
-    }
+    0% {transform: translate(-50%, 100vh); overflow: hidden;}
+    100% {transform: translate(-50%, 0);}
   }
 
 
   .test-leave-active {
-    animation: testLeave2 1s ease-in-out;
+    animation: testLeave2 0.5s ease-in-out;
     animation-fill-mode: forwards;
     height: calc(100vh - 96px);
     position: absolute;
-    left: 5%;
-    width: 90%;
+    width: 100%;
+    left: 50%;
 
     .about__img {
-      right: 6.65%;
-      bottom: 3.6%;
+      bottom: 4%;
     }
   }
 
   .test-enter-active {
       position: absolute;
-    animation: testEnter2 1s ease-in-out;
+    animation: testEnter2 0.5s ease-in-out;
     animation-delay: 0s;
-    left: 5%;
     height: calc(100vh - 96px);
-    width: 90%;
+    width: 100%;
+    left: 50%;
 
     .about__img {
-      right: 6.65%;
-      bottom: 3.6%;
+      bottom: 4%;
     }
   }
 
   @keyframes testLeave2 {
-    0% {transform: translateY(0); overflow: hidden;}
-    100% {transform: translateY(-100vh);}
+    0% {transform: translate(-50%, 0); overflow: hidden;}
+    100% {transform: translate(-50%, -100vh);}
   }
   @keyframes testEnter2 {
-    0% {transform: translateY(100vh); overflow: hidden;}
-    100% {transform: translateY(0);}
+    0% {transform: translate(-50%, 100vh); overflow: hidden;}
+    100% {transform: translate(-50%, 0);}
   }
