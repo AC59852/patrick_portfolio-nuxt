@@ -32,7 +32,7 @@ import { directive } from "vue-awesome-swiper";
 
 export default {
   transition: {
-    name: 'test',
+    name: 'router-anim',
     mode: ''
   },
 
@@ -55,12 +55,6 @@ export default {
         centeredSlides: true,
         loop: true,
         spaceBetween: 30,
-
-        breakpoints: {
-          375: {
-            spaceBetween: 30,
-          }
-        }
       },
     }
   },
