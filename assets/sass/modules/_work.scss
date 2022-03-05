@@ -13,3 +13,34 @@
         text-decoration: none;
     }
 }
+
+.swiper-container {
+    margin-top: 17%;
+  }
+  
+  .swiper-slide, .swiper-slide-duplicate, .swiper-slide-duplicate-prev, .swiper-slide-duplicate-next {
+    width: 65% !important;
+    filter: grayscale(1);
+    transition: filter 1s ease !important;
+    overflow: visible;
+  }
+  
+  .swiper-slide-active, .swiper-slide-duplicate-active {
+    filter: grayscale(0);
+  }
+
+  .swiper-wrapper {
+      height: 67vh !important;
+  }
+
+  .swiper-image {
+    width: 100%;
+    /* center the object */
+    object-position: center;
+    object-fit: contain;
+    box-sizing: border-box;
+    height: 90%;
+    padding: 5%;
+    margin: 0 0 5%;
+    box-shadow: 18px 17px 16px -1px rgba(0, 0, 0, 0.06);
+  }
