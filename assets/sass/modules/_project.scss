@@ -4,7 +4,7 @@
 
 .project {
   &__content { 
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -19,15 +19,17 @@
     justify-content: center;
     align-items: center;
     height: 85vh;
-    margin-bottom: 100px;
+    margin: 0 auto 100px;
+    width: 90%;
 
     &Image {
-      width: 246px;
+      max-width: 246px;
+      width: 63%;
     }
   }
 
   &__title {
-    font-size: 66px;
+    font-size: 30px;
     font-family: $heading-font;
     font-weight: 900;
     text-transform: uppercase;
@@ -35,7 +37,7 @@
     margin: 25px 0;
 
     &--small {
-      font-size: 40px;
+      font-size: 24px;
       margin: 19px 0;
     }
   }
@@ -43,10 +45,13 @@
   &__text {
     font-family: $body-font;
     font-size: 20px;
+    text-align: center;
+    line-height: 175%;
 
     &--small {
-      font-size: 18px;
+      font-size: 14px;
       line-height: 175%;
+      text-align: initial;
     }
   }
 
@@ -55,7 +60,7 @@
   }
 
   &__image {
-    margin: 80px auto !important;
+    margin: 40px auto !important;
     width: 100%;
   }
 

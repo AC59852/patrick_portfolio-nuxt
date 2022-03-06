@@ -71,14 +71,6 @@
   transition: padding-top 0.5s ease-in-out;
 }
 
-.container--slide {
-  padding-top: 20%;
-
-  img {
-    bottom: -6%;
-  }
-}
-
 .wrapper {
     position: relative;
     min-height: 100vh;
@@ -91,7 +83,6 @@
   position: absolute;
   height: calc(100vh - 69px);
   width: 100%;
-  left: 50%;
 
   .swiper-wrapper {
     justify-content: center;
@@ -118,7 +109,6 @@
 }
   .router-anim-enter-active {
     position: absolute;
-    left: 50%;
     animation: testEnter 0.5s ease-in-out;
     animation-delay: 0s;
     height: calc(100vh - 69px);
@@ -126,12 +116,12 @@
   }
   
   @keyframes testLeave {
-    0% {transform: translate(-50%, 0); overflow: hidden;}
-    100% {transform: translate(-50%, -100vh);}
+    0% {transform: translateX(0); overflow: hidden;}
+    100% {transform: translateX(-100vw);}
   }
   @keyframes testEnter {
-    0% {transform: translate(-50%, 100vh); overflow: hidden;}
-    100% {transform: translate(-50%, 0);}
+    0% {transform: translateX(100vw); overflow: hidden;}
+    100% {transform: translateX(0);}
   }
 
   .test-leave-active {
@@ -140,11 +130,29 @@
     height: calc(100vh - 69px);
     position: absolute;
     width: 100%;
-    left: 50%;
 
-    .about__img {
-      bottom: 4%;
+    .swiper-wrapper {
+    justify-content: center;
+  }
+
+  // put the last swiper-slide first
+  .swiper-slide {
+    margin: 0 15px
+  }
+  .swiper-slide:first-child {
+    filter: grayscale(0);
+    img {
+      background-color: rgb(73, 70, 101);
     }
+  }
+
+  .swiper-slide:nth-child(3) {
+    display: none;
+  }
+
+  .swiper-slide:last-child {
+    order: -1;
+  }
   }
 
   .test-enter-active {
@@ -153,7 +161,6 @@
     animation-delay: 0s;
     height: calc(100vh - 69px);
     width: 100%;
-    left: 50%;
 
     .about__img {
       bottom: 4%;
@@ -161,10 +168,10 @@
   }
 
   @keyframes testLeave2 {
-    0% {transform: translate(-50%, 0); overflow: hidden;}
-    100% {transform: translate(-50%, -100vh);}
+    0% {transform: translateY(0); overflow: hidden;}
+    100% {transform: translateY(-100vh);}
   }
   @keyframes testEnter2 {
-    0% {transform: translate(-50%, 100vh); overflow: hidden;}
-    100% {transform: translate(-50%, 0);}
+    0% {transform: translateY(100vh); overflow: hidden;}
+    100% {transform: translateY(0);}
   }

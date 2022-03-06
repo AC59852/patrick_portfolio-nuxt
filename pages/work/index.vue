@@ -30,6 +30,11 @@
 import SliceZone from 'vue-slicezone';
 import { directive } from "vue-awesome-swiper";
 
+// 810px carousel, smaller size, swiper-wrapper 60vh, swiper-image 6% padding
+// swiper-title 18px
+
+// 1024px tablet has desktop projects, centered scaled down with gap in between
+
 export default {
   transition: {
     name: 'router-anim',
@@ -55,6 +60,12 @@ export default {
         centeredSlides: true,
         loop: true,
         spaceBetween: 30,
+
+        breakpoints: {
+          810: {
+            spaceBetween: 50,
+          },
+        }
       },
     }
   },
