@@ -18,13 +18,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 90vh;
     margin: 0 auto 100px;
     width: 90%;
 
     &Image {
-      max-width: 246px;
-      width: 63%;
+      max-height: 396px;
+      height: 60%;
+      object-fit: contain;
+      box-shadow: 18px 17px 16px -1px rgba(0, 0, 0, 0.06);
     }
   }
 
@@ -47,11 +49,13 @@
     font-size: 20px;
     text-align: center;
     line-height: 175%;
+    width: 318px;
 
     &--small {
       font-size: 14px;
       line-height: 175%;
       text-align: initial;
+      width: auto;
     }
   }
 

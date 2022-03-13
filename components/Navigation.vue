@@ -36,12 +36,13 @@ export default {
         },
 
         toggleNav2() {
-            document.querySelector(".nav__list").classList.remove("nav__list--open");
-            document.querySelector(".nav__list").classList.add("nav__list--close");
+            let nav = document.querySelector('.nav__list');
+            nav.classList.remove("nav__list--open");
+            nav.classList.add("nav__list--close");
 
             // on animation end remove the close class
-            document.querySelector(".nav__list").addEventListener("animationend", () => {
-                document.querySelector(".nav__list").classList.remove("nav__list--close");
+            nav.addEventListener("animationend", () => {
+                nav.classList.remove("nav__list--close");
             });
 
             document.querySelector(".nav__close").classList.toggle("hide");

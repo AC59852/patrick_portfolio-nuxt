@@ -63,7 +63,7 @@ export default {
 
         breakpoints: {
           810: {
-            spaceBetween: 50,
+            spaceBetween: 30,
           },
         }
       },
@@ -83,6 +83,16 @@ export default {
 
   mounted() {
     console.log(this.projects);
+
+    // check for a project with project.data.projectName[0].text === 'Roboeats'
+    if (this.projects.length > 0) {
+      this.projects.forEach(project => {
+        if (project.data.projectName[0].text === 'Roboeats') {
+          // set project.data.colour to '#f5f5f5'
+          project.data.colour = '#E0DADA';
+        }
+      });
+    }
 
     if (window.innerWidth < 850) {
       this.mobile = true;
