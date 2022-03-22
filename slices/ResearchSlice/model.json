@@ -1,0 +1,53 @@
+{
+  "id": "research_slice",
+  "type": "SharedSlice",
+  "name": "ResearchSlice",
+  "description": "ResearchSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ResearchSlice",
+      "primary": {
+        "researchTitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Research Title",
+            "allowTargetBlank": true,
+            "single": "heading2,heading3,heading4,heading5,heading6,strong"
+          }
+        },
+        "researchImage": {
+          "config": {
+            "label": "researchImage",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "researchDescription": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "Description for Research Slice",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {
+        "researchImage2": {
+          "config": {
+            "label": "researchImage2",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      }
+    }
+  ]
+}
