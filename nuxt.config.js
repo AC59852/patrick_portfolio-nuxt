@@ -69,7 +69,10 @@ export default {
 
   googleFonts: {
     families: {
-      'DM+Sans': ['400', '600', '700']
+      'DM+Sans': {
+        wght: ['400', '600', '700'],
+        ital: ['400', '600', '700']
+      }
     }
   }
 }

@@ -30,6 +30,11 @@
 import SliceZone from 'vue-slicezone';
 import { directive } from "vue-awesome-swiper";
 
+// 810px carousel, smaller size, swiper-wrapper 60vh, swiper-image 6% padding
+// swiper-title 18px
+
+// 1024px tablet has desktop projects, centered scaled down with gap in between
+
 export default {
   transition: {
     name: 'router-anim',
@@ -55,6 +60,12 @@ export default {
         centeredSlides: true,
         loop: true,
         spaceBetween: 30,
+
+        breakpoints: {
+          810: {
+            spaceBetween: 30,
+          },
+        }
       },
     }
   },
@@ -72,6 +83,16 @@ export default {
 
   mounted() {
     console.log(this.projects);
+
+    // check for a project with project.data.projectName[0].text === 'Roboeats'
+    if (this.projects.length > 0) {
+      this.projects.forEach(project => {
+        if (project.data.projectName[0].text === 'Roboeats') {
+          // set project.data.colour to '#f5f5f5'
+          project.data.colour = '#E0DADA';
+        }
+      });
+    }
 
     if (window.innerWidth < 850) {
       this.mobile = true;

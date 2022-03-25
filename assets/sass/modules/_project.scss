@@ -3,8 +3,11 @@
   }
 
 .project {
+  section:last-child {
+    padding-bottom: 20%;
+  }
   &__content { 
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -18,16 +21,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 85vh;
-    margin-bottom: 100px;
+    height: 90vh;
+    margin: 0 auto 100px;
+    width: 90%;
 
     &Image {
-      width: 246px;
+      max-height: 396px;
+      height: 60%;
+      object-fit: contain;
+      box-shadow: 18px 17px 16px -1px rgba(0, 0, 0, 0.06);
     }
   }
 
   &__title {
-    font-size: 66px;
+    font-size: 30px;
     font-family: $heading-font;
     font-weight: 900;
     text-transform: uppercase;
@@ -35,7 +42,7 @@
     margin: 25px 0;
 
     &--small {
-      font-size: 40px;
+      font-size: 24px;
       margin: 19px 0;
     }
   }
@@ -43,10 +50,15 @@
   &__text {
     font-family: $body-font;
     font-size: 20px;
+    text-align: center;
+    line-height: 175%;
+    width: 318px;
 
     &--small {
-      font-size: 18px;
+      font-size: 14px;
       line-height: 175%;
+      text-align: initial;
+      width: auto;
     }
   }
 
@@ -55,8 +67,12 @@
   }
 
   &__image {
-    margin: 80px auto !important;
+    margin: 40px auto !important;
     width: 100%;
+
+    &--research {
+      margin: 30px auto !important;
+    }
   }
 
   &__body {
@@ -66,36 +82,39 @@
   &__processWrapper {
     display: flex;
     justify-content: space-evenly;
-    gap: 100px;
-    padding-bottom: 20%;
+    flex-direction: column;
+    gap: 60px;
   }
 
   &__processItem {
-    width: 30%;
+    width: 85%;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 
-    h2 {
+    h2, h3, h4, p { text-align: center; }
+
+    h2, h3, h4 {
       font-family: $body-font !important;
       font-weight: bold;
       font-size: 22px;
-      margin: 35px 0 5px;
+      margin: 25px 0 10px;
     }
 
     p {
       font-family: $body-font;
-      font-size: 18px;
+      font-size: 14px;
       line-height: 175%;
-      font-style: italic;
     }
 
     img {
       width: 100%;
       order: 1;
       height: 230px;
-      margin: 40px 0;
+      margin: 0;
       // fit content
       object-fit: contain;
+      order: -1;
     }
   }
 }
