@@ -111,7 +111,7 @@
     position: absolute;
     animation: testEnter 0.5s ease-in-out;
     animation-delay: 0s;
-    height: calc(100vh - 69px);
+    height: calc(100vh - 77px);
     width: 100%;
   }
   
@@ -127,7 +127,7 @@
   .test-leave-active {
     animation: testLeave2 0.5s ease-in-out;
     animation-fill-mode: forwards;
-    height: calc(100vh - 69px);
+    height: calc(100vh - 77px);
     position: absolute;
     width: 100%;
 

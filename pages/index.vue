@@ -4,7 +4,7 @@
           <h1 class="about__title">Patrick Bradley</h1>
           <p class="about__para">{{ aboutMe }}</p>
       </div>
-      <img src="@/assets/images/me_1.png" alt="Image of man holding chin" class="about__img">
+      <img src="@/assets/images/newDOODLE.png" alt="Image of man holding chin" class="about__img">
   </section>
 </template>
 

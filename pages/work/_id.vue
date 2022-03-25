@@ -24,7 +24,9 @@
           <prismic-rich-text :field="work.bodyTitle" class="project__title project__title--small"/>
           <prismic-rich-text :field="work.bodyContent" class="project__text project__text--small"/>
         </section>
-        <slice-zone type="work-layout" :uid="workUID" work-colour="blue"/>
+        <section class="project__sliceZone">
+          <slice-zone type="work-layout" :uid="workUID" work-colour="blue"/>
+        </section>
       </article>
   </section>
 </template>
