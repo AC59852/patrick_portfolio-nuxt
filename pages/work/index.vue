@@ -42,7 +42,7 @@ export default {
   },
   head() {
     return {
-      title: `Patrick Bradley | Projects`,
+      title: `Patrick Bradley | My Work`,
       meta: [
         {
           hid: 'description',
@@ -52,7 +52,7 @@ export default {
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: "Patrick Bradley | Projects"
+          content: "Patrick Bradley | My Work"
         },
         {
           hid: 'twitter:description',
@@ -72,7 +72,7 @@ export default {
         {
           hid: 'og:title',
           property: 'og:title',
-          content: `Patrick Bradley | Projects`
+          content: `Patrick Bradley | My Work`
         },
         {
           hid: 'og:description',
