@@ -13,10 +13,10 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'og:title', name: 'og:title', content: 'Patrick Bradley Portfolio' },
+      { hid: 'og:title', name: 'og:title', content: 'Patrick Bradley UX/UI Designer' },
       { hid: 'og:image', name: 'og:image', content: "@/assets/images/logo.png" },
       { hid: 'og:image:alt', name: 'og:image:alt', content: `Patrick Bradley's Logo` },
-      { hid: 'description', name: 'description', content: 'Patrick Bradley is a UX/UI Designer from London, Ontario focusing on simplifying user interfaces using wireframes and prototypes to produce user friendly, engaging responsive websites and mobile applications.' },
+      { hid: 'description', name: 'description', content: 'Patrick Bradley is a London and Toronto, Ontario based UX/UI Designer, focusing on simplifying user interfaces to produce user friendly, engaging, and responsive websites and mobile applications.' },
       { hid: 'og:site_name', name: 'og:site_name', content: 'Patrick Bradley' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
@@ -59,7 +59,10 @@ export default {
     },
     icon: {
       fileName: './icon.png',
-    }
+    },
+    theme_color: '#ffffff',
+    name: 'PB Portfolio',
+    author: 'Patrick Bradley',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

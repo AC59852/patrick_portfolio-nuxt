@@ -32,6 +32,60 @@ export default {
     name: 'router-anim',
     mode: ''
   },
+  head() {
+    return {
+      title: `Patrick Bradley | Contact`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: "Patrick Bradley is a London and Toronto, Ontario based UX/UI Designer, focusing on simplifying user interfaces to produce user friendly, engaging, and responsive websites and mobile applications."
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: "Patrick Bradley | Contact"
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: "Patrick Bradley is a London and Toronto, Ontario based UX/UI Designer, focusing on simplifying user interfaces to produce user friendly, engaging, and responsive websites and mobile applications."
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content:  "@/icons/seo_photo.png"
+        },
+        {
+          hid: 'twitter:image:alt',
+          name: 'twitter:image:alt',
+          content: "Hand drawn photo of Patrick Bradley"
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: `Patrick Bradley | Contact`
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: "Patrick Bradley is a London and Toronto, Ontario based UX/UI Designer, focusing on simplifying user interfaces to produce user friendly, engaging, and responsive websites and mobile applications."
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: "@/icons/seo_photo.png"
+        },
+        {
+          hid: 'og:image:alt',
+          name: 'og:image:alt',
+          content: "Hand drawn photo of Patrick Bradley"
+        },
+        { property: "og:image:width", content: "500" },
+        { property: "og:image:height", content: "500" },
+      ]
+    }
+  },
     data() {
         return {
             emailMsg: '',
