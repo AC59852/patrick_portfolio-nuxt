@@ -4,7 +4,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   router: {
-    base: '/patrick_portfolio-nuxt/'
+    base: '/'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -55,7 +55,8 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      lang: 'en',
+      name: `PB Portfolio`,
     },
     icon: {
       fileName: './icon.png',

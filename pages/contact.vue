@@ -54,7 +54,7 @@ export default {
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content:  "~/assets/icons/seo_photo.png"
+          content:  "https://raw.githubusercontent.com/AC59852/patrick_portfolio-nuxt/master/assets/icons/seo_photo.png"
         },
         {
           hid: 'twitter:image:alt',
@@ -74,7 +74,7 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: "~/assets/icons/seo_photo.png"
+          content: "https://raw.githubusercontent.com/AC59852/patrick_portfolio-nuxt/master/assets/icons/seo_photo.png"
         },
         {
           hid: 'og:image:alt',

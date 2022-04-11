@@ -42,7 +42,7 @@ export default {
   },
   head() {
     return {
-      title: `Patrick Bradley | Projects`,
+      title: `Patrick Bradley | My Work`,
       meta: [
         {
           hid: 'description',
@@ -52,7 +52,7 @@ export default {
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: "Patrick Bradley | Projects"
+          content: "Patrick Bradley | My Work"
         },
         {
           hid: 'twitter:description',
@@ -62,7 +62,7 @@ export default {
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content:  "~/assets/icons/seo_photo.png"
+          content:  "https://raw.githubusercontent.com/AC59852/patrick_portfolio-nuxt/master/assets/icons/seo_photo.png"
         },
         {
           hid: 'twitter:image:alt',
@@ -72,7 +72,7 @@ export default {
         {
           hid: 'og:title',
           property: 'og:title',
-          content: `Patrick Bradley | Projects`
+          content: `Patrick Bradley | My Work`
         },
         {
           hid: 'og:description',
@@ -82,7 +82,7 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: "~/icons/seo_photo.png"
+          content: "https://raw.githubusercontent.com/AC59852/patrick_portfolio-nuxt/master/assets/icons/seo_photo.png"
         },
         {
           hid: 'og:image:alt',
