@@ -116,8 +116,8 @@ export default {
         spaceBetween: 30,
 
         breakpoints: {
-          810: {
-            spaceBetween: 30,
+          800: {
+            spaceBetween: 55,
           },
         }
       },

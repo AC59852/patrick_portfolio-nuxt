@@ -17,7 +17,7 @@
   }
 
   .contact {
-    height: 85vh;
+    height: 85vh !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,7 +155,45 @@
       img { height: 250px; }
     }
   }
+
+  .contact {
+    &__title { 
+      font-size: 36px; 
+      margin-bottom: 20px;
+    }
+
+    &__form {
+      width: 69%;
+    }
+
+    &__input {
+      padding: 14px 10px;
+      margin: 15px 0;
+    }
+
+    &__submit {
+      padding: 17px 0;
+      margin: 0;
+    }
+  }
   
+}
+
+@media screen and (min-width: 800px) {
+  .about {
+    &__wrapper { margin-top: 14%; }
+    &__title { font-size: 50px; }
+    &__para { font-size: 28px; }
+  }
+  .swiper-wrapper {
+    height: 70vh !important;
+  }
+  .swiper-container {
+    margin-top: 20%;
+    .swiper-slide, .swiper-slide-duplicate, .swiper-slide-duplicate-prev, .swiper-slide-duplicate-next {
+      width: 50% !important;
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -306,6 +344,7 @@
   }
 
   .contact {
+    height: auto !important;
     padding-top: 3%;
     margin-top: 0;
     &__title {
