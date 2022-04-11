@@ -379,9 +379,32 @@
     margin-bottom: 90px;
   }
 
+  &__process {
+    width: 100%;
+  }
+
   &__processWrapper {
     flex-direction: row;
-    gap: 100px;
+    gap: 60px;
+  }
+
+  &__tools {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 120px;
+  }
+
+  &__roles {
+    position: relative;
+  }
+
+  &__divider {
+    display: block;
+    width: 2px;
+    height: 140px;
+    background-color: #000;
+    align-self: flex-end;
+    margin: 0 15%;
   }
 
   &__processItem {
@@ -391,10 +414,12 @@
 
     h2 {
       margin: 35px 0 5px;
+      text-align: left;
     }
 
     p {
       font-size: 18px;
+      text-align: left;
     }
 
     img {

@@ -12,8 +12,15 @@
           <prismic-rich-text :field="work.projectSubheading" class="project__text"/>
         </section>
         <section class="project__tools project__textContent">
-          <prismic-rich-text :field="work.title1" class="project__title project__title--small"/>
-          <prismic-rich-text :field="work.Content1" class="project__text project__text--small project__text--tools"/>
+          <div>
+            <prismic-rich-text :field="work.title1" class="project__title project__title--small"/>
+            <prismic-rich-text :field="work.Content1" class="project__text project__text--small project__text--tools"/>
+          </div>
+          <span class="project__divider"></span>
+          <div class="project__roles">
+            <prismic-rich-text :field="work.role" class="project__title project__title--small"/>
+            <prismic-rich-text :field="work.list_of_roles" class="project__text project__text--small project__text--tools"/>
+          </div>
         </section>
         <section class="project__problem project__textContent">
           <prismic-rich-text :field="work.title2" class="project__title project__title--small"/>
