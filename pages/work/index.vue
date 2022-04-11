@@ -148,7 +148,7 @@ export default {
       });
     }
 
-    if (window.innerWidth < 850) {
+    if (window.innerWidth < 1023) {
       this.mobile = true;
     } else {
       this.mobile = false;
@@ -156,7 +156,7 @@ export default {
 
     // on resize, check if mobile
     window.addEventListener('resize', () => {
-      if (window.innerWidth <= 850) {
+      if (window.innerWidth <= 1023) {
         this.mobile = true;
       } else {
         this.mobile = false;

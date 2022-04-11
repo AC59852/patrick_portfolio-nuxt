@@ -15,24 +15,45 @@
       width: 70% !important;
     }
   }
+
+  .contact {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 390px) {
   .about {
-    &__wrapper { margin-top: 20%; }
+    &__wrapper { margin-top: 21%; }
 
-    &__title { font-size: 33px; }
+    &__title { font-size: 30px; }
 
-    &__para { font-size: 22px; }
+    &__para { font-size: 20px; }
 
     &__img {
       width: 70%;
       bottom: 7.5%;
     }
   }
+
+  .swiper-image {
+    margin-bottom: 10%;
+  }
 }
 
 @media screen and (min-width: 600px) {
+  .buttonNav {
+    &__title { font-size: 24px; }
+  }
+
+  .nav {
+    height: 84px;
+  }
+
   .about {
     &__img {
       width: 48%;
@@ -58,28 +79,33 @@
   }
 
   .swiper-wrapper {
-    height: 60vh !important;
+    height: 75vh !important;
   }
 
   .swiper-container {
-    margin-top: 20%;
+    margin-top: 22%;
     .swiper-slide, .swiper-slide-duplicate, .swiper-slide-duplicate-prev, .swiper-slide-duplicate-next {
-      width: 50% !important;
+      width: 64% !important;
     }
 
     .swiper-image {
-      padding: 6%;
-      width: 82%;
+      padding: 9%;
+      width: 91%;
     }
   }
 
   .work {
     &__title {
+      display: none;
       font-size: 18px;
     }
   }
 
   .project {
+    section:last-child {
+      padding-bottom: 10%;
+    }
+
     &__hero {
       &Image {
         max-height: 508px;
@@ -96,6 +122,37 @@
 
     &__text {
       width: auto;
+
+      &--small {
+        font-size: 18px;
+      }
+    }
+
+    &__tools {
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 100px;
+    }
+
+    &__divider {
+      display: block;
+      width: 2px;
+      height: 140px;
+      background-color: #000;
+      align-self: flex-end;
+      margin: 0 10%;
+    }
+
+    &__processItem {
+      width: 60%;
+      margin: 40px auto;
+      p { 
+        font-size: 16px; 
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      img { height: 250px; }
     }
   }
   
@@ -337,11 +394,11 @@
     padding-bottom: 70px;
   }
   &__content { 
-    width: 60%;
+    width: 100%;
   }
 
   &__textContent {
-    width: 87%;
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -380,11 +437,10 @@
   }
 
   &__process {
-    width: 100%;
+    width: 80%;
   }
 
   &__processWrapper {
-    flex-direction: row;
     gap: 60px;
   }
 
@@ -408,24 +464,23 @@
   }
 
   &__processItem {
-    width: 30%;
+    width: 86%;
     display: flex;
     flex-direction: column;
 
     h2 {
       margin: 35px 0 5px;
-      text-align: left;
     }
 
     p {
       font-size: 18px;
-      text-align: left;
+      width: 100%;
     }
 
     img {
       width: 100%;
       order: 1;
-      height: 230px;
+      height: 250px;
       margin: 40px 0;
       // fit content
       object-fit: contain;
