@@ -529,3 +529,18 @@
 }
     
 }
+
+@media screen and (min-width: 1440px) {
+  .project {
+    &__image {
+      width: 67%;
+      display: block;
+    }
+
+    &__textContent { width: 55%; }
+
+    &__processWrapper {
+      flex-direction: row;
+    }
+  }
+}

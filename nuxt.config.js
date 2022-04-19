@@ -56,7 +56,7 @@ export default {
   pwa: {
     manifest: {
       lang: 'en',
-      name: `PB Portfolio`,
+      name: 'PB Portfolio',
     },
     icon: {
       fileName: './icon.png',
