@@ -13,6 +13,11 @@
 // gotham bold for small headers
 // dm sans for paragraph text
 
+html { 
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .hide {
   display: none !important;
 }
