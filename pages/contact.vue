@@ -25,7 +25,6 @@
 
 <script>
 // send button larger on hover
-
 import emailjs from '@emailjs/browser';
 export default {
     transition: {
