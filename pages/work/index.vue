@@ -43,6 +43,7 @@ export default {
   head() {
     return {
       title: `Patrick Bradley | My Work`,
+      changeMe: 'changeMe',
       meta: [
         {
           hid: 'description',
