@@ -15,7 +15,7 @@
 </template>
 
 <script>
-// nav link font-size tablet 28px 
+// nav link font-size tablet 26px 
 
 export default {
     
