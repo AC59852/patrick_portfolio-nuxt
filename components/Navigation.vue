@@ -7,7 +7,7 @@
           <ul class="nav__list">
               <li class="nav__listItem" @click="toggleNav2(); removeOverlay()"><nuxt-link to="/" class="nav__link">About</nuxt-link></li>
               <li class="nav__listItem" @click="toggleNav2(); removeOverlay()"><nuxt-link to="/work" class="nav__link">Work</nuxt-link></li>
-              <li class="nav__listItem" @click="toggleNav2(); removeOverlay()"><a href="https://drive.google.com/file/d/1Hgg85ylvMii06yyeptmaZdU9uDZrBr1D/view" target="_blank" class="nav__link">Resume</a></li>
+              <li class="nav__listItem" @click="toggleNav2(); removeOverlay()"><a href="https://drive.google.com/file/d/1lVn0XR5jorhV3K9a_pHEFa7R5foMdgPt/view" target="_blank" class="nav__link">Resume</a></li>
               <li class="nav__listItem" @click="toggleNav2(); removeOverlay()"><nuxt-link to="/contact" class="nav__link">Contact</nuxt-link></li>
           </ul>
       </nav>
