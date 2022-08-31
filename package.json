@@ -11,7 +11,7 @@
     "slicemachine": "start-slicemachine"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.5.0",
+    "@emailjs/browser": "^3.7.0",
     "@nuxtjs/prismic": "^1.4.1",
     "@nuxtjs/pwa": "^3.3.5",
     "@prismicio/slice-simulator-vue": "^0.2.0",
